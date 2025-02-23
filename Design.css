@@ -1,0 +1,278 @@
+html{
+    background-color:darkslategray;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color:goldenrod;
+    line-height: 200%;
+    text-align: center;
+    margin: 25px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+}
+
+.nav_text {
+    color:darkslategray;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_text:hover{
+    text-decoration: underline;
+}
+
+#logo{
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.logo_div{
+    text-align: center;
+}
+
+.intro{
+    background-color:#938a77;
+    float: right;
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.text_image{
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.portrait{
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 25px;
+    border-radius: 15%;
+}
+
+hr{
+    height: 5px;
+    background-color: goldenrod;
+    border-width: 0;
+}
+
+.cmtext_image{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tech_blocks{
+    margin-left: 25px;
+    margin-top: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: #938a77;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tech_links{
+    text-decoration: none;
+    color: black;
+}
+
+.cm_image{
+    width: 20%;
+    height: 20%;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 10px;
+    filter: contrast(1000%);
+}
+
+.tech_images{
+    max-width: 50%;
+    filter: contrast(1000%);
+}
+
+footer{
+    margin: 25px;
+    background-color: goldenrod;
+    border-radius: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.contact{
+    color:darkslategray;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.contact_items{
+    display: inline-block;
+    color:darkslategray;
+    text-align: center;
+    width: 33%;
+}
+
+#email:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#phoneNumber:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#linkedIn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top_text{
+    background-color:#938a77;
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.titles{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color:rgb(101, 128, 55);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 25px;
+}
+
+.education_description{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.interests{
+    background-color: #938a77;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.sub_text{
+    padding-left: 50px;
+    padding-top: 4%;
+    font-size: 20px;
+}
+
+#peru{
+    margin-left: 40%;
+    max-width: 30%;
+    height: 30%;
+    border-radius: 15px;
+}
+
+#gt{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+#gsu{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+.education{
+    background-color: #938a77;
+    border-radius: 15px;
+    margin: 25px;
+}
+
+.total_skills{
+    background-color: #938a77;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+.skills{
+    font-weight: bold;
+}
+
+.education_sub_text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.education_description{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.education_pics{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.honors{
+    background-color: #938a77;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.honor_titles{
+    font-weight: bold;
+    color:black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.experience{
+    background-color: #938a77;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.job_header{
+    font-weight: bold;
+}
+
+.experience_pics{
+    text-align: center;
+}
+
+.job_pic{
+    width: 200px;
+    height: 200px;
+}
