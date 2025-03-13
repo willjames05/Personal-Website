@@ -159,8 +159,7 @@ footer{
 .titles{
     text-align: center;
     font-weight: bold;
-    font-size: 25px;
-    text-decoration: underline;
+    font-size: 30px;
     background-color:rgb(101, 128, 55);
     border-radius: 15px;
     padding: 10px;
@@ -275,4 +274,15 @@ footer{
 .job_pic{
     width: 200px;
     height: 200px;
+}
+
+.projects{
+    background-color: #938a77;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.project_header{
+    font-weight: bold;
 }
