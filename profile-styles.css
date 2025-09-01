@@ -1,0 +1,93 @@
+body{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 auto;
+    background-color: rgb(156, 124, 37);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+h1{
+    text-align: center;
+}
+
+#logo{
+    padding: 10px;
+    width: 100px;
+    text-align: left;
+}
+
+#map-logos{
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    outline: none;
+    text-decoration: none;
+}
+
+.google-maps{
+    scale: 75%;
+    cursor: pointer;
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.all-trails{
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+    display: block;
+}
+
+.gaia{
+    padding-left: 5%;
+    padding-right: 5%;
+    cursor: pointer;
+    display: block;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+h5{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+h6{
+    font-size: 20px;
+    text-align: center;
+    line-height: 0%;
+}
+
+.hikes{
+    display: inline-flex;
+    max-width: 47%;
+    border-radius: 7%;
+}
+
+p{
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
