@@ -1,288 +1,499 @@
-html{
-    background-color:darkslategray;
+html {
+    background-color: darkslategray;
 }
 
-body{
+body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
+/* Base Styles (Mobile-First) */
 nav {
-    background-color:goldenrod;
+    background-color: goldenrod;
     line-height: 200%;
     text-align: center;
-    margin: 25px;
+    margin: 10px;
     border-radius: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center;
 }
 
 .nav_text {
-    color:darkslategray;
-    padding-left: 25px;
-    padding-right: 25px;
+    color: darkslategray;
+    padding: 8px 15px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
+    width: 100%; /* Full width for easy tapping */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
-.nav_text:hover{
+.nav_text:hover {
     text-decoration: underline;
 }
 
-#logo{
-    margin: 0 auto;
-    display: inline-block;
-    max-width: 100%;
-    height: 100px;
+#logo {
+    height: 80px;
+    margin: 0 auto 5px auto;
+}
+
+.logo_div {
+    width: 100%;
     text-align: center;
 }
 
-.logo_div{
-    text-align: center;
-}
-
-.intro{
-    background-color:#938a77;
-    float: right;
-    padding: 25px;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
+.intro, .top_text, .text_image, .cmtext_image, .interests, .education, .total_skills, .honors, .experience, .projects, .courses {
+    margin: 25px;
     border-radius: 15px;
 }
 
-.text_image{
-    display: flex;
-    padding-right: 25px;
-    align-items: center;
+.intro, .top_text {
+    background-color: #938a77;
+    padding: 25px;
+    font-size: clamp(20px, 5vw, 30px);
+    text-align: center;
+    font-weight: 600;
 }
 
-.portrait{
-    display:inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 25px;
+.text_image {
+    display: flex;
+    flex-direction: column; /* Stack vertically by default */
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.portrait {
+    width: clamp(200px, 50vw, 300px);
+    height: clamp(200px, 50vw, 300px);
+    object-fit: cover;
+    margin: 15px auto;
     border-radius: 15%;
 }
 
-hr{
+hr {
     height: 5px;
     background-color: goldenrod;
     border-width: 0;
+    margin: 25px;
 }
 
-.cmtext_image{
+.cmtext_image {
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-.tech_blocks{
-    margin-left: 25px;
-    margin-top: 25px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 10px;
+.tech_blocks {
+    margin: 10px;
+    padding: 10px;
     border-radius: 15px;
     background-color: #938a77;
     font-size: 16px;
     font-weight: bold;
+    flex-grow: 1; /* All tech blocks will grow to fill space equally */
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 
-.tech_links{
+.tech_links {
     text-decoration: none;
     color: black;
 }
 
-.cm_image{
-    width: 20%;
-    height: 20%;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-top: 10px;
+.tech_images {
+    max-width: 80px;
+    height: auto;
     filter: contrast(1000%);
+    display: block;
+    margin: 10px auto;
 }
 
-.tech_images{
-    max-width: 50%;
-    filter: contrast(1000%);
-}
-
-footer{
-    margin: 25px;
+footer {
     background-color: goldenrod;
-    border-radius: 15px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 15px;
 }
 
-.contact{
-    color:darkslategray;
-    font-size: 20px;
+.contact {
+    color: darkslategray;
+    font-size: 18px;
     font-weight: bold;
-    padding-top: 15px;
+    padding-top: 10px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
-.contact_items{
-    display: inline-block;
-    color:darkslategray;
+.contact_items {
+    color: darkslategray;
     text-align: center;
-    width: 33%;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
-#email:hover{
+#email:hover, #phoneNumber:hover, #linkedIn:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
-#phoneNumber:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-#linkedIn:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.top_text{
-    background-color:#938a77;
-    padding: 25px;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-}
-
-.titles{
+.titles {
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
-    background-color:rgb(101, 128, 55);
+    font-size: clamp(24px, 5vw, 30px);
+    background-color: rgb(101, 128, 55);
     border-radius: 15px;
-    padding: 10px;
+    padding: 8px;
     margin: 25px;
 }
 
-.education_description{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+.education_description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
     text-align: center;
+    white-space: pre-wrap;
 }
 
-.interests{
+.interests {
     background-color: #938a77;
-    margin: 25px;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sub_text{
-    padding-left: 50px;
-    padding-top: 4%;
-    font-size: 20px;
+.sub_text {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
 }
 
-#peru{
-    margin-left: 40%;
-    max-width: 30%;
-    height: 30%;
+#peru {
+    max-width: 80%;
+    height: auto;
     border-radius: 15px;
+    margin: 15px;
 }
 
-#gt{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 15px;
+#gt, #gsu {
+    width: clamp(100px, 20vw, 150px);
+    height: clamp(100px, 20vw, 150px);
+    margin: 10px;
+    object-fit: contain;
 }
 
-#gsu{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 15px;
-}
-
-.education{
+.education {
     background-color: #938a77;
-    border-radius: 15px;
-    margin: 25px;
+    padding: 15px;
 }
 
-.total_skills{
+.total_skills {
     background-color: #938a77;
-    border-radius: 15px;
-    margin: 25px;
     padding: 15px;
     padding-left: 20px;
 }
 
-.skills{
+.skills {
     font-weight: bold;
+    margin-top: 15px;
 }
 
-.education_sub_text{
+.details {
+    margin-bottom: 15px;
+}
+
+.education_sub_text {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     padding-top: 15px;
 }
 
-.education_description{
-    font-size: 15px;
+.education_pics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-bottom: 15px;
 }
 
-.education_pics{
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.honors{
+.honors {
     background-color: #938a77;
-    margin: 25px;
     padding: 15px;
-    border-radius: 15px;
     text-align: center;
 }
 
-.honor_titles{
+.honor_titles {
     font-weight: bold;
-    color:black;
+    color: black;
     text-decoration: underline;
     text-decoration-color: black;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.experience{
+.honor_descriptions {
+    margin-bottom: 15px;
+}
+
+.experience, .courses {
     background-color: #938a77;
-    margin: 25px;
     padding: 15px;
-    border-radius: 15px;
-}
-
-.job_header{
-    font-weight: bold;
-}
-
-.experience_pics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.job_pic{
-    width: 200px;
-    height: 200px;
-}
-
-.projects{
-    background-color: #938a77;
-    margin: 25px;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.project_header{
+.job_header {
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.job_points {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.experience_pics {
+    margin-top: 15px;
+}
+
+.job_pic {
+    max-width: clamp(100px, 20vw, 150px);
+    height: auto;
+    border-radius: 10px;
+}
+
+.projects {
+    padding: 15px;
+}
+
+.project_header {
+    font-weight: bold;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.project_bullets {
+    list-style-position: inside;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: darkslategray;
+    color: goldenrod;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4b6a6a;
+}
+
+/* New CSS for the dropdown functionality */
+.project-item {
+    margin-bottom: 15px;
+    background-color: #938a77; /* Darker background for each project item */
+    border-radius: 10px;
+    padding: 15px;
+    position: relative; /* For positioning the button */
+}
+
+.project-item .project_header {
+    margin-bottom: 0;
+    padding-right: 50px; /* Space for the button */
+}
+
+.dropdown-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: goldenrod;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: #938a77;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.dropdown-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+
+/* Tablet and larger screens (e.g., min-width of 768px) */
+@media (min-width: 768px) {
+    nav {
+        margin: 15px;
+        padding-bottom: 15px;
+        flex-direction: row; /* Change to row on larger screens */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav_text {
+        font-size: 20px;
+        padding: 10px 50px;
+        width: auto;
+    }
+
+    #logo {
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .logo_div {
+        flex-basis: 100%;
+    }
+    
+    .text_image {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portrait {
+        width: 300px;
+        height: 300px;
+        margin: 25px;
+    }
+
+    hr {
+        margin: 50px;
+    }
+    
+    .cmtext_image {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .tech_blocks {
+        max-width: 250px;
+        margin: 15px;
+    }
+
+    .cm_image {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer {
+        padding-bottom: 5px;
+        margin: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .contact_items {
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .titles {
+        font-size: 30px;
+        padding: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .interests {
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    #peru, .dropdown-content img {
+        max-width: 50%;
+    }
+
+    .top_text, .education, .honors, .total_skills, .experience, .courses, .projects {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .sub_text {
+        padding: 25px;
+        padding-left: 100px;
+        font-size: 30px;
+        text-align: left;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .text_image {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portrait {
+        margin: 15px auto;
+    }
+    .sub_text {
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+    }
+    .cmtext_image {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tech_blocks {
+        margin: 10px;
+    }
 }

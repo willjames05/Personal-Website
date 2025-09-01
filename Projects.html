@@ -14,55 +14,160 @@
         </div>
         <a class="nav_text" href="AboutMe.html">About Me</a>
         <a class="nav_text" href="Experience.html">Experience</a>
-        <a class="nav_text" href="Projects.html">Projects & Courses</a>
+        <a class="nav_text" href="Projects.html">My Work & Courses</a>
         <a class="nav_text" href="Resume.pdf" target="_blank">Resume</a>
     </nav>
     <p class="top_text">See several different projects below that I have worked on using different computer science languages!</p>
-    <p class="titles">Projects</p>
+    <hr>
+    <p class="titles">My Work</p>
     <div class="projects">
-        <p class="project_header">Personal Website | The Current Site You Are On</p>
-        <ul class="project_bullets">
-            <li>Utilized HTML, CSS, and JavaScript to create the site</li>
-            <li>Used to display my past experiences and information about me</li>
-        </ul>
-        <button>Home Page</button>
-    </div>
-    <div class="projects">
-        <p class="project_header">CS 1301 Web Development Project 3 | Online Portfolio & Travel Recommendation Bot</p>
-        <ul class="project_bullets">
-            <li>Used Streamlit with Python to create a website/app with a portfolio and travel recommendation pages</li>
-            <li>Integrated the Google Places API and Google Gemini LLM in order to display travel recommendations</li>
-        </ul>
-    </div>
-    <div class="projects">
-        <p class="project_header">CS 1301 Web Development Project 2 | "What Country Are You?" Form</p>
-        <ul class="project_bullets">
-            <li>Code in JavaScript, HTML, and CSS to create a Buzzfeed like quiz</li>
-            <li>Utilize JavaScript features like conditionals and functions to show the user what country they are</li>
-        </ul>
-    </div>
-    <div class="projects">
-        <p class="project_header">CS 1301 Web Development Project 1 | Google Search Page & Simple Website</p>
-        <ul class="project_bullets">
-            <li>Created a basic webpage that mimicked a Google search page linked to another page</li>
-            <li>Added text, pictures, hrefs, and more to the other site about hiking apps</li>
-        </ul>
-    </div>
+        <!-- New Project Item for Personal Website -->
+        <div class="project-item">
+            <h3 class="project_header">Personal Website | The Current Site You Are On | Fall 2024 - Present</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Utilized HTML, CSS, and JavaScript to create the site</li>
+                    <li>Used to display my past experiences and information about me</li>
+                </ul>
+                <a href="PersonalWebsite.html" target="_blank"><img src="webcode.png"></a>
+            </div>
+        </div>
+        
+        <!-- New Project Item for CS 4400 -->
+        <div class="project-item">
+            <h3 class="project_header">CS 4400 Yellow Jacket Delivery Company Project | SQL Database Including Views and Stored Procedures | Summer 2025</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Created and implemented a database from scratch with MySQL including creating an EERD and dependency diagram</li>
+                    <li>Implemented the database by using insert statements, views, and stored procedures to easily manipulate the data</li>
+                </ul>
+                <img src="sql1.jpeg">
+                <img src="sql2.jpeg">
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project_header">CS 3001 Final Paper | Ethicality of AI Using Copyrighted Music for Music Generation | Spring 2025</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Researched into the ethical decisions to think about when using AI generated music by looking at all viewpoints</li>
+                    <li>Learned about techniques used in AI music generation and AI systems being used in the background to run these softwares</li>
+                </ul>
+                <a href="CS 3001 Term Paper - Will James.pdf" target="_blank"><img src="e.png"></a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project_header">LMC 2400 Presentation | On "Virtual Humanity - Access, Empathy, and Objectivity in VR Film Making" By Ciaran Gillespie | Fall 2024</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Created and presented this presentation to my class including bringing in example media to support the claims in the paper</li>
+                    <li>Researched into VR Film Making and how it can be portrayed as one thing, but in the background be something different</li>
+                </ul>
+                <a href="LMC 2400 Presentation - Will James.pdf" target="_blank"><img src="lmc1.png"></a>
+            </div>
+        </div>
+
+        <!-- New Project Item for CS 1301 Project 3 -->
+        <div class="project-item">
+            <h3 class="project_header">CS 1301 Web Development Project 3 | Online Portfolio & Travel Recommendation Bot | Fall 2024</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Used Streamlit with Python to create a website/app with a portfolio and travel recommendation pages</li>
+                    <li>Integrated the Google Places API and Google Gemini LLM in order to display travel recommendations</li>
+                </ul>
+                <a href="https://webdevlab.streamlit.app/" target="_blank"><img src="web1.png"></a>
+            </div>
+        </div>
+
+        <!-- New Project Item for CS 1301 Project 2 -->
+        <div class="project-item">
+            <h3 class="project_header">CS 1301 Web Development Project 2 | "What Country Are You?" Form | Fall 2024</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Code in JavaScript, HTML, and CSS to create a Buzzfeed like quiz</li>
+                    <li>Utilize JavaScript features like conditionals and functions to show the user what country they are</li>
+                </ul>
+                <a href="CS-1301-Lab-2-main/form.html" target="_blank"><img src="cs1.png"></a>
+            </div>
+        </div>
+        
+        <!-- New Project Item for CS 1301 Project 1 -->
+        <div class="project-item">
+            <h3 class="project_header">CS 1301 Web Development Project 1 | Google Search Page & Simple Website | Fall 2024</h3>
+            <button class="dropdown-button" onclick="toggleDropdown(this)">+</button>
+            <div class="dropdown-content">
+                <ul class="project_bullets">
+                    <li>Created a basic webpage that mimicked a Google search page linked to another page</li>
+                    <li>Added text, pictures, hrefs, and more to the other site about hiking apps</li>
+                </ul>
+                <a href="CS-1301-Lab-1-main/index.html" target="_blank"><img src="lab1.1.png"></a>
+                <a href="CS-1301-Lab-1-main/profile.html" target="_blank"><img src="lab1.2.png"></a>
+            </div>
+        </div>
+           </div>
+        <hr>
+        <p class="titles">Relevant Courses</p>
+        <div class="courses">
+            <ul class="project_bullets">
+                <li>CS 1301: Introduction to Computing</li>
+                <li>CS 1331: Introduction to Object Oriented Programming</li>
+                <li>CS 1332: Data Structures and Algorithms</li>
+                <li>CS 3001: Computing and Society</li>
+                <li>CS 4400: Introduction to Database Systems</li>
+                <li>LMC 2400: Introduction to Media Studies</li>
+                <li>LMC 2700: Introduction to Computational Media</li>
+                <li>MGT 2210: Information Systems and Digital Transformation</li>
+                <li>MGT 4057: Business Process Analysis and Design</li>
+                <li>MUSI 2010: Fundamentals of Musicianship I</li>
+                <li>PSYC 1101: Introduction to Psychology</li>
+                <li>PSYC 4690: NeuroAI: Models of the Human Brain and Mind</li>
+            </ul>
+        </div>
+ 
     <footer>
         <p class="contact">Connect With Me</p>
         <div class="contact_items">
-        <p>Email</p>
-        <p id="email">wjames38@gatech.edu</p>
+            <p>Email</p>
+            <p id="email">wjames38@gatech.edu</p>
         </div>
         <div class="contact_items">
-        <p>Phone Number</p>
-        <p id="phoneNumber">912-536-2338</p>
+            <p>Phone Number</p>
+            <p id="phoneNumber">912-536-2338</p>
         </div>
         <div class="contact_items">
-        <p>LinkedIn</p>
-        <p id="linkedIn">linkedin.com/in/willcjames/</p>
+            <p>LinkedIn</p>
+            <p id="linkedIn">linkedin.com/in/willcjames/</p>
         </div>
     </footer>
-    <script src="Code.js"></script>
+    <script>
+        function toggleDropdown(button) {
+            const content = button.nextElementSibling;
+            const projects = document.querySelectorAll('.dropdown-content');
+            
+            // Close all other dropdowns
+            projects.forEach(project => {
+                if (project !== content && project.style.display === 'block') {
+                    project.style.display = 'none';
+                    project.previousElementSibling.previousElementSibling.textContent = '+';
+                }
+            });
+
+            // Toggle the clicked dropdown
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                button.textContent = "+";
+            } else {
+                content.style.display = "block";
+                button.textContent = "-";
+            }
+        }
+    </script>
 </body>
 </html>
