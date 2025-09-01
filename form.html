@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Will James</title>
+        <link rel="icon" href="images/globe.webp" type="image/x-icon"/>
+        <link rel="stylesheet" type ="text/css" href="index.css">
+    </head>
+    <body>
+        <form action="results.html" method="get">
+            <h1>What country are you?</h1>
+            <h2>Answer these questions to find out which country you are!</h2>
+            <div>
+                <p>How many countries have you been too?</p>
+                <input type="radio" id="1" name="amount" value="1" required>
+                <label for="1">1</label>
+                <input type="radio" id="23" name="amount" value="23" required>
+                <label for="23">2-3</label>
+                <input type="radio" id="3+" name="amount" value="3+" required>
+                <label for="3+">3+</label>
+            </div>
+            <div>
+                <p>Which continents have you been to?</p>
+                <input type="checkbox" id="NA" name = "continents" value="NA">
+                <label for="NA">North America</label>
+                <br />
+                <input type="checkbox" id="SA" name = "continents" value="SA">
+                <label for="SA">South America</label>
+                <br />
+                <input type="checkbox" id="As" name = "continents" value="As">
+                <label for="As">Asia</label>
+                <br />
+                <input type="checkbox" id="Af" name = "continents" value="Af">
+                <label for="Af">Africa</label>
+                <br />
+                <input type="checkbox" id="Eu" name = "continents" value="Eu">
+                <label for="Eu">Europe</label>
+                <br />
+                <input type="checkbox" id="Oc" name = "continents" value="Oc">
+                <label for="Oc">Oceania</label>
+                <br />
+                <input type="checkbox" id="An" name = "continents" value="An">
+                <label for="An">Antarctica</label>
+            </div>
+            <div>
+                <label for="vacation"></label>
+                    <p>What is your dream vacation?</p>
+                <select name="vacation" id="vacation">
+                    <option value="disabled" disabled selected></option>
+                    <option value="alps">The French Alps</option>
+                    <option value="beach">The Bahamas</option>
+                    <option value="nyc">New York City</option>
+                    <option value="home">Sitting At Home</option>
+                </select>
+            </div>
+            <div>
+                <p>What do you do most often when you travel?</p>
+                <input type="radio" id="tourist" name="do" value="tourist" required>
+                <label for="tourist">Visit tourist traps in the city</label>
+                <br />
+                <input type="radio" id="hike" name="do" value="hike" required>
+                <label for="hike">Get away from the city and do outdoor activities such as hiking</label>
+                <br />
+                <input type="radio" id="mix" name="do" value="mix" required>
+                <label for="mix">A mix of both</label>
+            </div>
+            <div>
+                <p>What is your ideal lodging when you travel?</p>
+                <input type="radio" id="5s" name="stay" value="5s" required>
+                <label for="5s">Stay in a 5-star hotel in a big city</label>
+                <br />
+                <input type="radio" id="cabin" name="stay" value="cabin" required>
+                <label for="cabin">Stay in a cabin or house outside of the city</label>
+                <br />
+                <input type="radio" id="camping" name="stay" value="camping" required>
+                <label for="camping">Camp under the stars far away from the city</label>
+            </div>
+            <div>
+                <input id="submitbutton" type="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+</html>
