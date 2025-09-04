@@ -148,31 +148,37 @@
     </footer>
     <script>
         function toggleDropdown(button) {
-            const content = button.nextElementSibling;
-            const projects = document.querySelectorAll('.dropdown-content');
-            const buttons = document.querySelectorAll('.dropdown-button');
-            
-            // Close all other dropdowns
-            projects.forEach(project => {
-                if (project !== content && project.style.display === 'block') {
-                    project.style.display = 'none';
-                    buttons[index - 1].textContent = "+";
-                }
-            });
+    const content = button.nextElementSibling;
+    const allProjects = document.querySelectorAll('.project-item');
 
-            // Toggle the clicked dropdown
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                button.textContent = "+";
-            } else {
-                content.style.display = "block";
-                button.textContent = "-";
+    // Loop through all project items
+    allProjects.forEach(project => {
+        const otherButton = project.querySelector('.dropdown-button');
+        const otherContent = project.querySelector('.dropdown-content');
+
+        // Close other dropdowns and reset their buttons
+        if (otherContent !== content && otherContent.style.display === 'block') {
+            otherContent.style.display = 'none';
+            if (otherButton) {
+                otherButton.textContent = "+";
             }
         }
+    });
+
+    // Toggle the clicked dropdown
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        button.textContent = "+";
+    } else {
+        content.style.display = "block";
+        button.textContent = "-";
+    }
+}
     </script>
 </body>
 
 </html>
+
 
 
 
